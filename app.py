@@ -21,7 +21,7 @@ def weatherapp():
     }
     response = requests.get(url, param)
     data = response.json()
-    return f"{data}, city: {data['city']}"
+    return f"{data}, city: {data['name']}"
 
 
 
