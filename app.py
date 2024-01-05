@@ -20,7 +20,8 @@ def weatherapp():
         "apikey":apikey
     }
     response = requests.get(url, param)
-    return response.json()
+    data = response.json()
+    return f"{data}, city: {data['city']}"
 
 
 
